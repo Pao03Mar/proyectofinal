@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Página de Inicio{% endblock %}
+
+{% block content %}
+<h1>Bienvenido a la página de inicio</h1>
+
+
+<ul>
+    <li><a href="{% url 'ventas_list' %}">Ventas</a></li>
+    <li><a href="{% url 'cajas_list' %}">Cajas</a></li>
+    <li><a href="{% url 'compras_list' %}">Compras</a></li>
+    <li><a href="{% url 'detalle_ventas_list' %}">Detalle Ventas</a></li>
+    <li><a href="{% url 'detalle_compras_list' %}">Detalle Compras</a></li>
+    <li><a href="{% url 'productos_list' %}">Productos</a></li>
+    <li><a href="{% url 'proveedores_list' %}">Proveedores</a></li>
+    <li><a href="{% url 'prod_prov_list' %}">Producto-Proveedor</a></li>
+</ul>
+{% endblock %}
